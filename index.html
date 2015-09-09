@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('/img/twitter-banner.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Learning Three.js</h1>
+                        <h2 class="subheading">or WebGL for Dummies</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+        {% for post in site.posts %}
+                <div class="post-preview">
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                        <h2 class="post-title">
+                           {{ post.title }}
+                        </h2>
+                    </a>
+                    <p class="post-meta">
+                            {% if site.author %} Posted by {{ site.author }}{% endif %}
+                            on {{ post.date | date: "%b %-d, %Y" }}
+                    </p>
+                </div>
+                <hr>
+        {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+</div>
