@@ -8,16 +8,17 @@ categories: [basic, webgl]
 [Three.js](https://github.com/mrdoob/three.js) is a 3D library in javascript. According
 to [mrdoob](http://mrdoob.com/), its author, three.js is
 
-> The aim of the project is to create a lightweight 3D engine with a very low level of
-> complexity — in other words, for dummies. The engine can render using canvas, svg and WebGL.
-> - mrdoob, tree.js author
+```
+The aim of the project is to create a lightweight 3D engine with a very low level of
+complexity — in other words, for dummies. The engine can render using canvas, svg and WebGL.
+```
 
 ## Step 1: get the source
 
 The source are available [here](https://github.com/mrdoob/three.js). Use
 the following command
 
-```bash
+```
 git clone https://github.com/mrdoob/three.js.git
 ```
 

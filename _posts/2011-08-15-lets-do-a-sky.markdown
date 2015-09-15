@@ -13,7 +13,7 @@ easy addition to your effects. This is simple and efficient.
 
 # Background
 
-<img src='/data/lets_do_a_sky/images/Panorama_cube_map.png' style='float: right;'>
+<img src='/data/lets_do_a_sky/images/Panorama_cube_map.png' style='float:right;' >
 Technically this is called a [cube mapping](http://en.wikipedia.org/wiki/Cube_mapping).
 Why that ? because the principle is so simple: we create a large cube, apply some images
 on each face of this cube and put the camera inside it. That's it.
@@ -42,7 +42,7 @@ This will create the texture objects and download all the images. They are usual
 in 6 images: *posx* for the front face on X axis, negx for the back side on the X axis, posy
 for the front on Y axis and so on. 
 
-```javascript
+``` javascript
     var urlPrefix = "images/Bridge2/";
     var urls = [ urlPrefix + "posx.jpg", urlPrefix + "negx.jpg",
         urlPrefix + "posy.jpg", urlPrefix + "negy.jpg",

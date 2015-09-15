@@ -31,7 +31,7 @@ In general, the examples are composed of 3 parts:
 nothing magical in here... just declaring variables you will need later, initialise
 the 3D with ```init()``` and start the animation with ```animate()```
 
-{% codeblock create the Cube - cubeCreation.js %}
+```
 var startTime	= Date.now();
 var container;
 var camera, scene, renderer;
@@ -41,7 +41,7 @@ var cube;
 init();
 // make it move
 animate();
-{% endcodeblock %}
+```
 
 # Part 2: init() functions
 
@@ -57,13 +57,13 @@ be two small cubes and a sphere, almost anything you want...
 
 To initiate this variable is simple
 
-{% codeblock create the Scene - sceneCreation.js %}
+```
 scene = new THREE.Scene();
-{% endcodeblock %}
+```
 
 ## Lets create the cube
 
-{% codeblock create the Cube - cubeCreation.js %}
+```
 // create the Cube
 cube = new THREE.Mesh( new THREE.CubeGeometry( 200, 200, 200 )
 		, new THREE.MeshNormalMaterial() );
@@ -71,7 +71,7 @@ cube = new THREE.Mesh( new THREE.CubeGeometry( 200, 200, 200 )
 cube.position.y = 150;
 // add the object to the scene
 scene.addObject( cube );
-{% endcodeblock %}
+```
 
 * *Step 1*: the cube is created by associating a *Geometry* and a *Material*
 * *Step 2*: the cube is positionned in the scene. By setting position.y, it is
@@ -85,12 +85,12 @@ what is in front of it exactly like a physical camera.
 *i.e.* if you represent a cube on your scene, the camera can be
 above or on the side of the cube. It can be static or moving.
 
-{% codeblock create the Camera - cameraCreation.js %}
+```
 camera = new THREE.Camera( 70, window.innerWidth / window.innerHeight, 1, 1000 );
 camera.position.y = 150;
 camera.position.z = 350;
 camera.target.position.y = 150;
-{% endcodeblock %}
+```
 
 You set the position of the camera in x/y/z (default to 0).
 Then you determine the ```camera.target``` position aka the camera will point
@@ -102,22 +102,22 @@ to the position of its target.
 The 3D scene will be rendered in this container element. Beside this, it is a
 normal DOM element.
 
-{% codeblock create the container - createContainer.js %}
+```
 // create the container element
 container = document.createElement( 'div' );
 document.body.appendChild( container );
-{% endcodeblock %}
+```
 
 ## Create the renderer
 
 We create a WebGL renderer and append it to the DOM.
 
-{% codeblock create the renderer - createRenderer.js %}
+```
 // init the WebGL renderer and append it to the Dom
 renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 container.appendChild( renderer.domElement );
-{% endcodeblock %}
+```
 
 # misc Notes:
 

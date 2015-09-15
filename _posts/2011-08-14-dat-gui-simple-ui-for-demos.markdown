@@ -12,7 +12,7 @@ demo to play with it. It is simple to code, yet cool and minimalist on the scree
 It is the blue vuemeters on the screenshot below. This post is a presentation of
 the library.
 
-<img src='/data/dat_gui_simple_ui_for_demos/datgui_integrated.png'>
+<img src='/data/dat_gui_simple_ui_for_demos/datgui_integrated.png' style='float:right;' >
 
 ## How to include it
 
@@ -28,8 +28,7 @@ Simply include the library file in your page. Download it [there](http://code.go
 
 First initialize the object itself. It will create the widget and display it on the
 screen top right corner. You can change this position if you wish (see ```autoplace```)
-
-<img src='/data/dat_gui_simple_ui_for_demos/datgui_closeup.png' style='float: right;'>
+<img src='/data/dat_gui_simple_ui_for_demos/datgui_closeup.png' style='float:right;' >
 
 ``` javascript
     var gui = new DAT.GUI({

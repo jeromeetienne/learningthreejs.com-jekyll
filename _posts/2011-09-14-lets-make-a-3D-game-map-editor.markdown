@@ -20,7 +20,7 @@ progression which is fun. Players like fun things :)
 
 ## So let's make a map editor
 
-{% img right /data/lets_make_a_game_map_editor/images/200px-Voxels.svg.png Example %}
+<img src='/data/lets_make_a_game_map_editor/images/200px-Voxels.svg.png' style='float:right;' >
 
 So i searched for a way to do map for our *marble game*.
 I wanted something **very reusable and hackable**,
@@ -47,7 +47,7 @@ this [editor](http://jeromeetienne.github.com/marbleGame/editor).
 
 ## Now Let's Use This Editor
 
-{% img right /data/lets_make_a_game_map_editor/images/webgl-rocks.png Example %}
+<img src='/data/lets_make_a_game_map_editor/images/webgl-rocks.png' style='float:right;' >
 
 The [editor](http://jeromeetienne.github.com/marbleGame/editor)
 got an inline help on top. So it should be rather simple.

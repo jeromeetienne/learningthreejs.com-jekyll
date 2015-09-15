@@ -15,7 +15,7 @@ may be.
 
 ## Tweening... what's that?
 
-<img src='/data/tweenjs_for_smooth_animation/images/tweenjs-linear-easenone.png' style='float: right;'>
+<img src='/data/tweenjs_for_smooth_animation/images/tweenjs-linear-easenone.png' style='float:right;' >
 
 From [wikipedia article](http://en.wikipedia.org/wiki/Tweening), *tweening* is an abreviation of *inbetweening*, i
 dont know why but i find that funny maybe because *inbetweening* isnt a word to begin with.
@@ -26,8 +26,8 @@ are those values.
 This is done with the **ease function**. The most obvious one is to go straight from ```source```
 to ```target```. This is the linear function you see on on the right.
 
-<img src='/data/tweenjs_for_smooth_animation/images/tweenjs-cubic-easeinout.png' style='float: right;'>
-<img src='/data/tweenjs_for_smooth_animation/images/tweenjs-elastic-easeinout.png' style='float: right;'>
+<img src='/data/tweenjs_for_smooth_animation/images/tweenjs-cubic-easeinout.png' style='float:right;' >
+<img src='/data/tweenjs_for_smooth_animation/images/tweenjs-elastic-easeinout.png' style='float:left;' >
 But some are more funky, you can
 see *Elastic EaseInOut* on the left
 and
@@ -86,8 +86,7 @@ for the fun of it.
     tween.delay(500)
 ```
 
-<img src='/data/tweenjs_for_smooth_animation/images/tweenjs-elastic-easeinout.png' style='float: right;'>
-
+<img src='/data/tweenjs_for_smooth_animation/images/tweenjs-elastic-easeinout.png' style='float:right;' >
 Obviously you can change the ease function too.
 Choose any one you like among [the 31 from tween.js](http://sole.github.com/tween.js/examples/03_graphs.html).
 Let's pick the funny one on the right, it is ```TWEEN.Easing.Elastic.InOut```.
@@ -136,3 +135,5 @@ So [tween.js](https://github.com/sole/tween.js) is a nice small library which
 provides an easy way to animate things in your demos. You can get a play with
 the parameters of the [example](/data/tweenjs_for_smooth_animation/tweenjs_for_smooth_animation.html) or
 look at its [annotated code](/data/tweenjs_for_smooth_animation/docs/tweenjs_for_smooth_animation.html).
+
+
