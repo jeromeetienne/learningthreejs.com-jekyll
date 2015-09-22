@@ -9,6 +9,13 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://learningthreejs.com" # the base hostname & protocol for your site
 author: <a href='http://twitter.com/andraconnect' target='_blank'>Alexandra Etienne</a> and <a href='http://twitter.com/jerome_etienne' target='_blank'>Jerome Etienne</a>
 permalink: /blog/:year/:month/:day/:title/
+
+
+category_dir: blog/categories
+
+# Google Analytics
+google_analytics_tracking_id: UA-4037844-19
+
 # Build settings
 # markdown: kramdown
 

@@ -35,7 +35,16 @@ filenames.forEach(function(filename){
 	
 })
 
+//////////////////////////////////////////////////////////////////////////////////
+//		Comments
+//////////////////////////////////////////////////////////////////////////////////
 
+/**
+ * convert {% blockquote/codeblock } 
+ * 
+ * @param {String} content - the content to convert
+ * @return {String} - the converted string
+ */
 function processFileQuote(content){
 	var srcLines = content.split(/\n/)
 	var dstLines = srcLines.map(function(srcLine){
@@ -48,7 +57,12 @@ function processFileQuote(content){
 	return dstLines.join('\n')
 }
 
-
+/**
+ * convert {% img } 
+ * 
+ * @param {String} content - the content to convert
+ * @return {String} - the converted string
+ */
 function processFileImg(content){
 	var srcLines = content.split(/\n/)
 	var dstLines = srcLines.map(function(srcLine){
